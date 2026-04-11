@@ -1,0 +1,12 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/
+
+# PowerShell
+*.ps1xml
+
+# OS
+.DS_Store
+Thumbs.db
