@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-12-03T18:49:08.443Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="lfFnsgUnx_NzDERwssJ3" version="22.1.5" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="948" dy="445" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VvHk4-2tswej1MnFQL8m-4" value="Search User Account" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;container=1;" vertex="1" parent="1">
+          <mxGeometry x="177" y="62" width="846" height="278" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-7" value="Admin" style="swimlane;startSize=20;horizontal=0;html=1;swimlaneLine=1;swimlaneFillColor=none;gradientColor=none;container=0;collapsible=1;expand=1;metaEdit=0;noLabel=0;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-4">
+          <mxGeometry y="20" width="846" height="258" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-11" target="VvHk4-2tswej1MnFQL8m-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-11" value="1. Successful admin login." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="49" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-12" target="VvHk4-2tswej1MnFQL8m-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-12" value="2. Navigate to &quot;Search &amp;amp; Edit Users&quot; on homepage." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="206" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-16" target="VvHk4-2tswej1MnFQL8m-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-16" value="3. Add search field to form." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="366" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-17" target="VvHk4-2tswej1MnFQL8m-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-17" value="4. Admin presses &quot;Search&quot; button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="526" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-18" value="5. Web page displays results matching search field." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="686" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

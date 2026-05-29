@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" modified="2023-10-02T17:14:52.611Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0" etag="wivgUIfkfRDmQN0GOINa" version="22.0.0" type="google">
+  <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-1" value="Website" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="80" width="100" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-1">
+          <mxGeometry x="45" y="120" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.9;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.3;exitY=0.45;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="CwZ-eFuekhxp4CjKSivd-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="45" y="210" as="sourcePoint" />
+            <mxPoint x="-142" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-16" value="Asks user to validate logout request " style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-15">
+          <mxGeometry x="0.1722" y="-3" relative="1" as="geometry">
+            <mxPoint x="15" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-3" value="Web Browser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="490" y="80" width="100" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-3">
+          <mxGeometry x="45" y="270" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.17;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="145" y="234" as="sourcePoint" />
+            <mxPoint x="330" y="234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-14" value="Clicks Logout link" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-13">
+          <mxGeometry x="0.1722" y="-3" relative="1" as="geometry">
+            <mxPoint x="-19" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="145" y="330" as="sourcePoint" />
+            <mxPoint x="330" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-18" value="Validates logout request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-17">
+          <mxGeometry x="0.1722" y="-3" relative="1" as="geometry">
+            <mxPoint x="-19" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-19" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="80" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-20" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-19">
+          <mxGeometry x="45" y="120" width="10" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="CwZ-eFuekhxp4CjKSivd-19">
+          <mxGeometry x="45" y="310" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-26" value="Send request to logout" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0028" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="529.5" y="360" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwZ-eFuekhxp4CjKSivd-27" value="User is logged out of their account" style="endArrow=classic;html=1;rounded=0;exitX=-0.1;exitY=0.833;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CwZ-eFuekhxp4CjKSivd-5">
+          <mxGeometry x="0.0028" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="424" as="sourcePoint" />
+            <mxPoint x="150" y="425" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2023-12-03T19:19:14.415Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="KdngKAWR-726wK0I-I4H" version="22.1.5" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="1124" dy="473" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VvHk4-2tswej1MnFQL8m-4" value="Edit Course" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="177" y="62" width="1461" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-7" value="Admin" style="swimlane;startSize=20;horizontal=0;html=1;swimlaneLine=1;swimlaneFillColor=none;gradientColor=none;container=0;collapsible=1;expand=1;metaEdit=0;noLabel=0;" parent="VvHk4-2tswej1MnFQL8m-4" vertex="1">
+          <mxGeometry y="20" width="1461" height="276" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-11" target="VvHk4-2tswej1MnFQL8m-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-11" value="1. Admin navigates to &quot;Edit Course&quot; search box." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="49" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-12" target="VvHk4-2tswej1MnFQL8m-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-12" value="2. Admin enters course name to search for course." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="206" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-16" target="69JgW-r_Es-XTbwphvDD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-16" value="3. Admin presses search button to the right of the search box." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="366" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="69JgW-r_Es-XTbwphvDD-2" target="69JgW-r_Es-XTbwphvDD-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-2" value="4. Admin sees results matching search field." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="526" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="69JgW-r_Es-XTbwphvDD-3" target="69JgW-r_Es-XTbwphvDD-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-3" value="5. Admin presses edit button in same row as course to edit." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="686" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="69JgW-r_Es-XTbwphvDD-4" target="69JgW-r_Es-XTbwphvDD-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-4" value="6. Redirect to course edit page. Admin see form with selected course information." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="846" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="69JgW-r_Es-XTbwphvDD-5" target="69JgW-r_Es-XTbwphvDD-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-5" value="7. Admin updates information about the course." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="1006" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="69JgW-r_Es-XTbwphvDD-6" target="69JgW-r_Es-XTbwphvDD-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-6" value="8. Admin presses green &quot;Update Course&quot; button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="1166" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69JgW-r_Es-XTbwphvDD-7" value="9. Redirect to course home page and successful course update message." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="1326" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

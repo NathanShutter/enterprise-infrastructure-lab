@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2023-09-11T03:13:17.666Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/116.0" etag="5EG2zZn2cJ1YslI3VRp8" version="21.7.4" type="google">
+  <diagram name="Page-1" id="kwJlDmUDWf-rXyMEW-_R">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FaTvhmC98WvvT71R3U6Y-1" target="FaTvhmC98WvvT71R3U6Y-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-1" value="Student" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="250" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FaTvhmC98WvvT71R3U6Y-3" target="FaTvhmC98WvvT71R3U6Y-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-3" value="&lt;div&gt;Press&quot;Analytics&quot;&amp;nbsp;&lt;/div&gt;&lt;div&gt;link on Touch and&amp;nbsp;&lt;/div&gt;&lt;div&gt;Go&#39;s user interface&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FaTvhmC98WvvT71R3U6Y-8" target="FaTvhmC98WvvT71R3U6Y-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-8" value="&lt;div&gt;Press on specific class to generate&amp;nbsp;&lt;/div&gt;&lt;div&gt;data pertaining to the&amp;nbsp;&lt;/div&gt;&lt;div&gt;class&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FaTvhmC98WvvT71R3U6Y-10" value="&lt;div&gt;Correct&amp;nbsp;&lt;/div&gt;&lt;div&gt;attendance data is&amp;nbsp;&lt;/div&gt;&lt;div&gt;generated pertaining&amp;nbsp;&lt;/div&gt;&lt;div&gt;to the class&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

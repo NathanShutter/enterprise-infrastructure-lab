@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2023-12-03T18:54:49.202Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="ZkYFzARl0-dHwqU_Mibl" version="22.1.5" type="device">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="192" dy="103" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VvHk4-2tswej1MnFQL8m-4" value="Create Course" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;container=1;" parent="1" vertex="1">
+          <mxGeometry x="177" y="62" width="1023" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-7" value="Admin" style="swimlane;startSize=20;horizontal=0;html=1;swimlaneLine=1;swimlaneFillColor=none;gradientColor=none;container=0;collapsible=1;expand=1;metaEdit=0;noLabel=0;" parent="VvHk4-2tswej1MnFQL8m-4" vertex="1">
+          <mxGeometry y="20" width="1023" height="276" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-11" target="VvHk4-2tswej1MnFQL8m-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-11" value="1. Admin selects &quot;Course&quot; button in navbar." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="49" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-12" target="VvHk4-2tswej1MnFQL8m-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-12" value="2. Admin can see the &quot;Create Course&quot; section." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="206" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-16" value="3. Admin enters information about new course in form fields." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="366" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qw8kaAM9114dmS1f6NGN-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-17" target="VvHk4-2tswej1MnFQL8m-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="608" y="229" />
+              <mxPoint x="426" y="229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VvHk4-2tswej1MnFQL8m-17" value="4a. Admin selects the red &quot;Clear&quot; button" style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="546" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg7AaijYITIFEbR4tplu-2" value="4b. Admin selects the green &quot;Create Course&quot; button." style="rounded=0;whiteSpace=wrap;html=1;" parent="VvHk4-2tswej1MnFQL8m-7" vertex="1">
+          <mxGeometry x="701" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qw8kaAM9114dmS1f6NGN-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="518" y="43.5" width="333" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qw8kaAM9114dmS1f6NGN-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.533;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="VvHk4-2tswej1MnFQL8m-16" target="qw8kaAM9114dmS1f6NGN-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qw8kaAM9114dmS1f6NGN-3" value="5. Course created. Successful course creation message." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="VvHk4-2tswej1MnFQL8m-7">
+          <mxGeometry x="878" y="99" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qw8kaAM9114dmS1f6NGN-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.007;entryY=0.409;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="VvHk4-2tswej1MnFQL8m-7" source="qw8kaAM9114dmS1f6NGN-1" target="qw8kaAM9114dmS1f6NGN-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
