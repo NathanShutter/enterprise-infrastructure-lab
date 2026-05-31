@@ -25,8 +25,8 @@ The end goal is a fully reproducible lab deployable via Terraform in a single co
 | Network | Internal only — 10.10.10.0/24 |
 | Domain | corp.local |
 | Domain Controller | DC01 — 10.10.10.10 |
-| Workstation | WS01 — 10.10.10.20 |
-| File Server | FS01 — 10.10.10.30 |
+| Workstation | WS01 — 10.10.10.20 (Windows 11) |
+| File Server | FS01 — 10.10.10.30 (Windows Server 2022) |
 | Firewall | pfSense *(planned)* |
 
 ---
@@ -50,17 +50,18 @@ The end goal is a fully reproducible lab deployable via Terraform in a single co
 - [x] WS01 moved to Workstations OU
 - [x] Security baseline GPO applied and verified with `gpresult /r`
 
-### Phase 3 — File Services 🔄
+### Phase 3 — File Services ✅
 - [x] FS01 deployed (Windows Server 2022), joined to corp.local
 - [x] FS01 moved to Servers OU
 - [x] File and Storage Services role installed
 - [x] Department shares created: HR, Sales, Finance, IT
-- [x] NTFS permissions applied via security groups
-- [ ] Drive mapping GPO with item-level targeting
-- [ ] Cross-department access denial tested and documented
+- [x] NTFS permissions applied via security groups (inheritance disabled)
+- [x] Drive mapping GPO configured with item-level targeting by security group
+- [x] SID-based group targeting fixed for Windows 11 compatibility
+- [x] H: drive verified mapping automatically at login for hr.david
 
-### Phase 4 — Group Policy 📋
-- [ ] Department-scoped GPOs per OU
+### Phase 4 — Group Policy 🔄
+- [ ] Department-scoped GPOs per OU (HR, Sales, IT, Finance)
 - [ ] Advanced audit policy on file shares
 - [ ] AppLocker / software restriction policy
 
@@ -77,8 +78,7 @@ The end goal is a fully reproducible lab deployable via Terraform in a single co
 
 ### Phase 7 — Portfolio Documentation 📋
 - [ ] Network topology diagram
-- [ ] Comprehensive README (this file — ongoing)
-- [ ] Portfolio case study
+- [ ] Portfolio case study on personal site
 
 ---
 
@@ -107,23 +107,23 @@ corp.local
 Users are never assigned permissions directly. The chain is:
 
 ```
-sales.james  (User Accounts/Sales OU)
-    └── member of GG_Sales  (Groups OU)
-            └── Modify on \\FS01\Sales  (NTFS)
-                    └── S: drive mapped at login  (GPO)
+hr.david  (User Accounts/HR OU)
+    └── member of GG_HR  (Groups OU)
+            └── Modify on \\FS01\HR  (NTFS)
+                    └── H: drive mapped at login  (GPO, item-level targeting by SID)
 ```
 
-OUs handle organization and GPO targeting. Groups handle permissions. Keeping them separate makes both easier to manage.
+OUs handle organization and GPO targeting. Groups handle permissions.
 
 ### Security Groups
 
-| Group | Members | Purpose |
+| Group | SID | Members |
 |---|---|---|
-| GG_HR | hr.david, hr.sarah | Access to \\FS01\HR |
-| GG_Sales | sales.james, sales.emily | Access to \\FS01\Sales |
-| GG_IT | it.ryan, it.laura | Access to \\FS01\IT |
-| GG_Finance | finance.mark, finance.jessica | Access to \\FS01\Finance |
-| GG_IT_Admins | it.ryan | Elevated IT admin access |
+| GG_HR | S-1-5-21-...-1103 | hr.david, hr.sarah |
+| GG_Sales | S-1-5-21-...-1104 | sales.james, sales.emily |
+| GG_IT | S-1-5-21-...-1105 | it.ryan, it.laura |
+| GG_Finance | S-1-5-21-...-1106 | finance.mark, finance.jessica |
+| GG_IT_Admins | — | it.ryan |
 
 ---
 
@@ -139,26 +139,39 @@ OUs handle organization and GPO targeting. Groups handle permissions. Keeping th
 
 ---
 
+## GPO Summary
+
+| GPO | Linked to | Purpose |
+|---|---|---|
+| Default Domain Policy | Domain root | Built-in defaults |
+| Security Baseline | Domain root | Password, lockout, audit policy |
+| Drive Mapping | Domain root | Department drive maps (item-level targeting by SID) |
+| GPO_HR_Policy | OU=HR | Department restrictions *(planned)* |
+| GPO_Sales_Policy | OU=Sales | Department restrictions *(planned)* |
+| GPO_IT_Policy | OU=IT | Department restrictions *(planned)* |
+| GPO_Finance_Policy | OU=Finance | Department restrictions *(planned)* |
+
+---
+
 ## Repo Structure
 
 ```
 enterprise-infrastructure-lab/
 ├── README.md
 ├── docs/
-│   ├── architecture.md
-│   ├── network-diagram.png
-│   ├── ou-structure.md
-│   ├── permissions.md
-│   └── gpo-design.md
+│   ├── architecture.md       # VM specs, network design, design rationale
+│   ├── ou-structure.md       # Full OU tree and GPO targeting table
+│   ├── permissions.md        # NTFS permissions and access matrix
+│   └── gpo-design.md         # GPO inventory and settings
 ├── scripts/
 │   ├── ad/
-│   │   ├── New-LabUsers.ps1
-│   │   └── users.csv
+│   │   ├── New-LabUsers.ps1  # Bulk user creation from CSV
+│   │   └── users.csv         # User data
 │   └── fs/
-│       └── New-Shares.ps1
+│       └── New-Shares.ps1    # Share creation and NTFS permissions
 └── terraform/
-    ├── main.tf
-    ├── variables.tf
+    ├── main.tf               # *(planned)*
+    ├── variables.tf          # *(planned)*
     └── modules/
         ├── domain-controller/
         ├── workstation/
@@ -167,26 +180,29 @@ enterprise-infrastructure-lab/
 
 ---
 
-## Scripts
+## Notable Troubleshooting
 
-| Script | Location | Purpose |
-|---|---|---|
-| `New-LabUsers.ps1` | `scripts/ad/` | Bulk-creates AD users from CSV |
-| `users.csv` | `scripts/ad/` | User data for New-LabUsers.ps1 |
-| `New-Shares.ps1` | `scripts/fs/` | Creates shares and NTFS permissions on FS01 |
+**Drive mapping GPO not applying on Windows 11**
+GPO drive map preferences require explicit SID values in the `FilterGroup` XML. Windows 11 will not resolve group names alone at login time. Fixed by patching `Drives.xml` in SYSVOL with the correct SID for each security group.
+
+**FS01 ping timeout**
+Ping to FS01 times out from DC01 and WS01 due to Windows Firewall blocking ICMP. SMB traffic works correctly — `Test-Path \\FS01\HR` returns True and shares are fully accessible.
+
+**FS01 domain join**
+Initial domain join completed on the client but the computer object was not created in AD. Resolved by removing the computer from the domain and rejoining with `Add-Computer`.
 
 ---
 
 ## Skills Demonstrated
 
 - Active Directory design — OU structure, AGDLP RBAC model
-- DNS configuration and validation (`dcdiag`, `nslookup`)
-- Group Policy — security baseline, department scoping, drive mapping
+- DNS configuration and validation (`dcdiag`, `nslookup`, reverse lookup zones)
+- Group Policy — security baseline, drive mapping with SID-based item-level targeting
 - File server deployment and NTFS permission management
 - PowerShell automation — bulk user/group creation, share provisioning
+- Real-world troubleshooting — GPO SID resolution, domain join issues, IPv6 interference
 - Network segmentation — VLANs, inter-VLAN routing, firewall rules *(planned)*
 - Infrastructure as Code — Terraform + VMware vSphere provider *(planned)*
-- Technical documentation and version-controlled runbooks
 
 ---
 
