@@ -60,12 +60,12 @@ The end goal is a fully reproducible lab deployable via Terraform in a single co
 - [x] SID-based group targeting fixed for Windows 11 compatibility
 - [x] H: drive verified mapping automatically at login for hr.david
 
-### Phase 4 — Group Policy 🔄
-- [ ] Department-scoped GPOs per OU (HR, Sales, IT, Finance)
-- [ ] Advanced audit policy on file shares
-- [ ] AppLocker / software restriction policy
+### Phase 4 — Group Policy ✅
+- [x] Department-scoped GPOs per OU (HR, Sales, IT, Finance)
+- [x] Advanced audit policy configured in Security Baseline GPO
+- [x] USB storage restricted for HR and Finance via GPO
 
-### Phase 5 — Network Segmentation 📋
+### Phase 5 — Network Segmentation 🔄
 - [ ] pfSense VM deployed (3-NIC)
 - [ ] VLAN 10 — servers (10.10.10.0/24)
 - [ ] VLAN 20 — clients (10.10.20.0/24)
